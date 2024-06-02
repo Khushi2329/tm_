@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS tasks_db;
+
+USE tasks_db;
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description VARCHAR(200),
+    completed BOOLEAN DEFAULT FALSE
+);
